@@ -1,0 +1,88 @@
+/* Antd Overrides */
+
+/* Holidays (Red text) */
+.ant-picker-cell-holiday {
+  color: #ef4444 !important; /* text-red-500 */
+}
+
+/* If a holiday is disabled, make it look disabled instead of bright red */
+.ant-picker-cell-disabled .ant-picker-cell-holiday {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/* Hover state for holidays */
+.ant-picker-cell:hover .ant-picker-cell-holiday {
+  background-color: #fef2f2 !important; /* bg-red-50 */
+  color: #dc2626 !important;
+}
+
+/* Selected state for holidays should still be primary blue */
+.ant-picker-cell-selected .ant-picker-cell-holiday {
+  color: #ffffff !important;
+}
+
+/* Hide year navigation buttons and disable clicking year label */
+.ant-picker-header-super-prev-btn,
+.ant-picker-header-super-next-btn {
+  display: none !important;
+}
+.ant-picker-header-year-btn {
+  pointer-events: none !important;
+}
+
+/* Dark mode popup */
+.dark-calendar-popup .ant-picker-panel-container {
+  background-color: #1f2937 !important; /* bg-gray-800 */
+  border: 1px solid #374151 !important; /* border-gray-700 */
+}
+
+.dark-calendar-popup .ant-picker-header {
+  color: #f9fafb !important;
+  border-bottom: 1px solid #374151 !important;
+}
+
+.dark-calendar-popup .ant-picker-header button {
+  color: #9ca3af !important;
+}
+
+.dark-calendar-popup .ant-picker-header button:hover {
+  color: #ffffff !important;
+}
+
+.dark-calendar-popup .ant-picker-content th {
+  color: #9ca3af !important;
+}
+
+.dark-calendar-popup .ant-picker-cell {
+  color: #d1d5db !important;
+}
+
+.dark-calendar-popup .ant-picker-cell-in-view {
+  color: #f9fafb !important;
+}
+
+.dark-calendar-popup .ant-picker-cell-disabled::before {
+  background-color: #374151 !important; /* bg-gray-700 */
+}
+
+.dark-calendar-popup .ant-picker-cell-disabled .ant-picker-cell-holiday {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-calendar-popup .ant-picker-cell-disabled .ant-picker-cell-inner {
+  color: #6b7280 !important; /* text-gray-500 */
+}
+
+.dark-calendar-popup .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-disabled) .ant-picker-cell-inner {
+  background-color: #374151 !important;
+}
+
+/* Dark mode holiday overrides */
+.dark-calendar-popup .ant-picker-cell-holiday {
+  color: #fca5a5 !important; /* text-red-300 */
+}
+.dark-calendar-popup .ant-picker-cell:hover .ant-picker-cell-holiday {
+  background-color: rgba(127, 29, 29, 0.2) !important;
+  color: #f87171 !important;
+}
